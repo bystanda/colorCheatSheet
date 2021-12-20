@@ -8,14 +8,17 @@
     <link rel="shortcut icon" type="image/jpg" href="Designed.png"/>
   </head>
   <body onload="loadImage()">
+    <button id="fontChange" onclick="fontChange()">
+     <img src="font.png" alt="font change" width="30" height="auto">
+    </button>
     <div>
-      <h1>What are the parameters for the <span class="tooltip">/scheme<span class="tooltiptext">Create cool color schemes!</span></span> command?</h1>
-      <h2>Hue</h2>
-      <p>Think of this as the base color. In scratch, for example, hue is the first slider. In the HSV color format, hue is the first value. </p>
-      <h2>Type</h2>
-      <p>What do you want the color pallete to look like?<br><br><b>Monochromatic- </b>The monochromatic scheme is based on selecting a single hue on the color wheel, then adding more colors by varying the source color's saturation and brightness. Four colors will be produced.<br><br><b>Contrast- </b>Contrast supplements the selected hue with its complement (the color opposite it on the color wheel) as another source color. 8 colors will be produced.<br><br><b>Triade- </b>Triade takes the selected hue and adds two more source colors that are both a certain distance from the initial hue. 12 colors will be produced. <br><br><b>Tetrade- </b>Tetrade is like Triade, but it adds another 2 source colors, creating 4 total sources. 16 colors will be produced. <br><br><b>Analogic- </b>Analogic produces colors that are "analogous", or next to each other on the color wheel. 12 colors will be produced.</p>
-      <h2>Variation</h2>
-      <p>These variations will alter the produced colors. They basically work exactly like filters would in any image editing program.<br><br><b>Normal- </b>No change in the colors.<br><br><b>Pastel- </b>Produces pastel colors, which have in HSV high value and low-intermediate saturation.<br><br><b>Soft- </b>Produces darker pastel colors.<br><br><b>Light- </b>Very light, almost washed-out colors.<br><br><b>Hard- </b>Deeper, very saturated colors.<br><br><b>Pale- </b>Colors with more gray; less saturated.</p>
+      <h1 id="header">What are the parameters for the <span class="tooltip">/scheme<span class="tooltiptext">Create cool color schemes!</span></span> command?</h1>
+      <h2 id="hue">Hue</h2>
+      <p id="hueEx">Think of this as the base color. In the HSV color format, hue is the first value. </p>
+      <h2 id="type">Type</h2>
+      <p id="typeEx">What do you want the color pallete to look like?<br><br><b>Monochromatic- </b>The monochromatic scheme is based on selecting a single hue on the color wheel, then adding more colors by varying the source color's saturation and brightness. Four colors will be produced.<br><br><b>Contrast- </b>Contrast supplements the selected hue with its complement (the color opposite it on the color wheel) as another source color. 8 colors will be produced.<br><br><b>Triade- </b>Triade takes the selected hue and adds two more source colors that are both a certain distance from the initial hue. 12 colors will be produced. <br><br><b>Tetrade- </b>Tetrade is like Triade, but it adds another 2 source colors, creating 4 total sources. 16 colors will be produced. <br><br><b>Analogic- </b>Analogic produces colors that are "analogous", or next to each other on the color wheel. 12 colors will be produced.</p>
+      <h2 id="var">Variation</h2>
+      <p id="varEx">These variations will alter the produced colors. They basically work exactly like filters would in any image editing program.<br><br><b>Normal- </b>No change in the colors.<br><br><b>Pastel- </b>Produces pastel colors, which have in HSV high value and low-intermediate saturation.<br><br><b>Soft- </b>Produces darker pastel colors.<br><br><b>Light- </b>Very light, almost washed-out colors.<br><br><b>Hard- </b>Deeper, very saturated colors.<br><br><b>Pale- </b>Colors with more gray; less saturated.</p>
 
       <p id="links">Visit <a href="https://paletton.com/">this site</a> for a visual representation of this. <br>This command was made possible by <a href="https://www.npmjs.com/package/color-scheme">this package.</a></p>
     </div>
